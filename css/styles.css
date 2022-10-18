@@ -6,6 +6,8 @@ body{
     background-color: #F5EFE6;
     font-size: 2.5rem;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #182747;
 }
 
 .main-container{
@@ -24,4 +26,10 @@ body{
     border: 3px solid #7895B2;
     padding: 5px;;
     align-items: center;
+    justify-content: center;
+}
+.english-letter{
+    font-size: 200px;
+    font-weight: 900;
+    color: #7D6E83;
 }
