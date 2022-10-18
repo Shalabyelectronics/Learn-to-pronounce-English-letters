@@ -1,0 +1,27 @@
+* {
+    border:2px solid red;
+}
+body{
+    margin: 0;
+    background-color: #F5EFE6;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    background-color: #E8DFCA;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.show-letter-container{
+    display: flex;
+    background-color: #AEBDCA;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px 0;
+    border: 3px solid #7895B2;
+    padding: 5px;;
+    align-items: center;
+}
