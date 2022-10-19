@@ -18,10 +18,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
-input{
+textarea{
     margin: 20px;
     border-radius: 180px;
     width:50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 .show-letter-container{
     display: flex;
