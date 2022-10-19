@@ -1,13 +1,23 @@
 const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-document.querySelector("body").addEventListener("keyup",(event)=>{
-    playLetterSound(event.key);
-})
 
-document.querySelector("#myInput").addEventListener("input",(event)=>{
-    let getText = document.querySelector("#myInput");
-    playLetterSound(getText.value)
-    getText.value = "";
-})
+let details = navigator.userAgent;
+let regexp = /android|iphone/i;
+let isMobileDevice = regexp.test(details);
+if (isMobileDevice){
+    document.querySelector("textarea").style.setProperty("display","block");
+    document.querySelector("#myInput").addEventListener("input",()=>{
+        let getText = document.querySelector("#myInput");
+        playLetterSound(getText.value)
+        getText.value = "";
+    })
+}else{
+    document.querySelector("body").addEventListener("keyup",(event)=>{
+        playLetterSound(event.key);
+    })
+}
+
+
+
 
 function playLetterSound(char){
     if (alphabet.includes(char)){
