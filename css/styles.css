@@ -16,6 +16,12 @@ body{
     padding: 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+input{
+    margin: 20px;
+    border-radius: 180px;
+    width:50px;
 }
 .show-letter-container{
     display: flex;
